@@ -424,7 +424,7 @@ metric_comp_plot <-
   scale_y_continuous(labels = unit_format(unit = " Trillion", prefix = "$", sep="", scale = 1e-12)) + 
   ylab("Federal Spending") + 
   ggtitle("Federal Spending by Field Used") + 
-  scale_color_manual(name="", values=c("Total Obligated"="blue", "Federal Action Obligated"="red")) + 
+  scale_color_manual(name="", values=c("Total Obligated"="green", "Federal Action Obligated"="red")) + 
   scale_x_continuous("Year", labels = as.character(NationalTotals_J40$Year), breaks = NationalTotals_J40$Year) + theme(axis.text.x=element_text(angle = 45, hjust = 1))
 metric_comp_plot
 
@@ -470,8 +470,10 @@ J40_FedSpend_Perc_plot <-
   scale_y_continuous(limits = c(0,0.1),labels = scales::percent) + 
   ylab("Justice 40 Federal Spending Percentage") + 
   ggtitle("Justice 40 Federal Spending by FY") + 
-  scale_color_manual(name="", values=c("J40 Percentage"="blue")) + theme(plot.title = element_text(hjust = 0.5)) + 
+  scale_color_manual(name="", values=c("J40 Percentage"="turquoise")) + theme(plot.title = element_text(hjust = 0.5)) + 
   scale_x_continuous("Year", labels = as.character(NationalTotals_J40$Year), breaks = NationalTotals_J40$Year) + theme(axis.text.x=element_text(angle = 45, hjust = 1))
 J40_FedSpend_Perc_plot
+
+
 
 
