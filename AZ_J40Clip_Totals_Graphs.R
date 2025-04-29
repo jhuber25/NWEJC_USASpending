@@ -11,10 +11,10 @@ colnames(AZ_TrendDF) <- headers
 
 
 ######################### FY2008 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2008_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2008_All_Assistance_Full_20250406")
 FY2008 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2008_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2008 <- subset(FY2008, FY2008$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2008_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2008 <- subset(FY2008, FY2008$primary_place_of_performance_state_name == "AZ" | FY2008$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2008$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -38,10 +38,10 @@ gc()
 
 
 ######################### FY2009 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2009_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2009_All_Assistance_Full_20250406")
 FY2009 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2009_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2009 <- subset(FY2009, FY2009$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2009_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2009 <- subset(FY2009, FY2009$primary_place_of_performance_state_name == "AZ" | FY2009$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2009$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -65,10 +65,10 @@ gc()
 
 
 ######################### FY2010 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2010_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2010_All_Assistance_Full_20250406")
 FY2010 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2010_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2010 <- subset(FY2010, FY2010$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2010_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2010 <- subset(FY2010, FY2010$primary_place_of_performance_state_name == "AZ" | FY2010$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2010$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -93,10 +93,10 @@ gc()
 
 
 ######################### FY2011 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2011_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2011_All_Assistance_Full_20250406")
 FY2011 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2011_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2011 <- subset(FY2011, FY2011$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2011_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2011 <- subset(FY2011, FY2011$primary_place_of_performance_state_name == "AZ" | FY2011$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2011$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -120,10 +120,10 @@ gc()
 
 
 ######################### FY2012 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2012_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2012_All_Assistance_Full_20250406")
 FY2012 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2012_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2012 <- subset(FY2012, FY2012$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2012_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2012 <- subset(FY2012, FY2012$primary_place_of_performance_state_name == "AZ" | FY2012$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2012$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -148,10 +148,10 @@ gc()
 
 
 ######################### FY2013 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2013_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2013_All_Assistance_Full_20250406")
 FY2013 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2013_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2013 <- subset(FY2013, FY2013$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2013_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2013 <- subset(FY2013, FY2013$primary_place_of_performance_state_name == "AZ" | FY2013$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2013$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -176,10 +176,10 @@ gc()
 
 
 ######################### FY2014 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2014_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2014_All_Assistance_Full_20250406")
 FY2014 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2014_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2014 <- subset(FY2014, FY2014$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2014_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2014 <- subset(FY2014, FY2014$primary_place_of_performance_state_name == "AZ" | FY2014$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2014$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -204,10 +204,10 @@ gc()
 
 
 ######################### FY2015 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2015_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2015_All_Assistance_Full_20250406")
 FY2015 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2015_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2015 <- subset(FY2015, FY2015$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2015_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2015 <- subset(FY2015, FY2015$primary_place_of_performance_state_name == "AZ" | FY2015$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2015$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -233,10 +233,10 @@ gc()
 
 
 ######################### FY2016 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2016_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2016_All_Assistance_Full_20250406")
 FY2016 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2016_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2016 <- subset(FY2016, FY2016$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2016_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2016 <- subset(FY2016, FY2016$primary_place_of_performance_state_name == "AZ" | FY2016$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2016$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -261,10 +261,10 @@ gc()
 
 
 ######################### FY2017 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2017_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2017_All_Assistance_Full_20250406")
 FY2017 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2017_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2017 <- subset(FY2017, FY2017$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2017_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2017 <- subset(FY2017, FY2017$primary_place_of_performance_state_name == "AZ" | FY2017$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2017$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -290,10 +290,10 @@ gc()
 
 
 ######################### FY2018 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2018_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2018_All_Assistance_Full_20250406")
 FY2018 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2018_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2018 <- subset(FY2018, FY2018$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2018_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2018 <- subset(FY2018, FY2018$primary_place_of_performance_state_name == "AZ" | FY2018$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2018$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -320,10 +320,10 @@ gc()
 
 
 ######################### FY2019 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2019_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2019_All_Assistance_Full_20250406")
 FY2019 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2019_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2019 <- subset(FY2019, FY2019$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2019_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2019 <- subset(FY2019, FY2019$primary_place_of_performance_state_name == "AZ" | FY2019$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2019$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -350,10 +350,10 @@ write.csv(AZ_TrendDF, file = "D:/R_Analysis_IntermediateFiles/Arizona/arizonaj40
 
 
 ######################### FY2020 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2020_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2020_All_Assistance_Full_20250406")
 FY2020 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2020_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2020 <- subset(FY2020, FY2020$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2020_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2020 <- subset(FY2020, FY2020$primary_place_of_performance_state_name == "AZ" | FY2020$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2020$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -379,10 +379,10 @@ gc()
 
 
 ######################### FY2021 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2021_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2021_All_Assistance_Full_20250406")
 FY2021 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2021_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2021 <- subset(FY2021, FY2021$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2021_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2021 <- subset(FY2021, FY2021$primary_place_of_performance_state_name == "AZ" | FY2021$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2021$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -407,10 +407,10 @@ gc()
 
 
 ######################### FY2022 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2022_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2022_All_Assistance_Full_20250406")
 FY2022 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2022_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2022 <- subset(FY2022, FY2022$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2022_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2022 <- subset(FY2022, FY2022$primary_place_of_performance_state_name == "AZ" | FY2022$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2022$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -435,10 +435,10 @@ gc()
 
 
 ######################### FY2023 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2023_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2023_All_Assistance_Full_20250406")
 FY2023 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2023_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2023 <- subset(FY2023, FY2023$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2023_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2023 <- subset(FY2023, FY2023$primary_place_of_performance_state_name == "AZ" | FY2023$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2023$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -463,10 +463,10 @@ gc()
 
 
 ######################### FY2024 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2024_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2024_All_Assistance_Full_20250406")
 FY2024 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2024_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2024 <- subset(FY2024, FY2024$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2024_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2024 <- subset(FY2024, FY2024$primary_place_of_performance_state_name == "AZ" | FY2024$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2024$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
@@ -491,10 +491,10 @@ gc()
 
 
 ######################### FY2025 Block ################################################
-setwd("D:/USASpending_AwardDataArchive_Download_20250306/FY2025_All_Assistance_Full_20250306")
+setwd("D:/USASpending_AwardDataArchive_Download_20250406/FY2025_All_Assistance_Full_20250406")
 FY2025 <- do.call(rbind,
-                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250306/FY2025_All_Assistance_Full_20250306"), read_csv))
-AZ_FY2025 <- subset(FY2025, FY2025$primary_place_of_performance_state_name == "AZ" | AZ_FY2009$primary_place_of_performance_state_name == "ARIZONA")
+                  lapply(list.files(path = "D:/USASpending_AwardDataArchive_Download_20250406/FY2025_All_Assistance_Full_20250406"), read_csv))
+AZ_FY2025 <- subset(FY2025, FY2025$primary_place_of_performance_state_name == "AZ" | FY2025$primary_place_of_performance_state_name == "ARIZONA")
 typeof(AZ_FY2025$cfda_number)  ## stored in this CSV as character vector
 Justice40_ProgramList <- read_csv("D:/CFDA_Sheet/Justice40_Combined_ConfirmedUnconfirmedCFDAs.csv")
 typeof(Justice40_ProgramList$CFDA) # CSV read in as double, so need to convert character to double
